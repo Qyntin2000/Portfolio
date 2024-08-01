@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qyntin Dewease - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <h1>Qyntin Dewease</h1>
+        <p>IT Student | Problem Solver | Tech Enthusiast | Programmer</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>As a Cybersecurity and Information Technology major at Hagerstown Community College, I am pursuing my passion for both hardware and software technologies. With plans to transfer to a four-year university in spring 2025, I am committed to advancing my education in this dynamic field. I leverage a combination of classroom knowledge and practical experience to address real-world challenges, continuously seeking opportunities to apply and expand my technical skills.</p>
+        </section>
+
+        <section id="programming">
+            <h2>Programming Languages</h2>
+            <div class="skills">
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="skill-bar" style="width: 35%;"></div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar" style="width: 50%;"></div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="skill-bar" style="width: 20%;"></div>
+                </div>
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="skill-bar" style="width: 30%;"></div>
+                </div>
+                <div class="skill">
+                    <span>MySQL</span>
+                    <div class="skill-bar" style="width: 35%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Other Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <span>Networking</span>
+                    <div class="skill-bar" style="width: 50%;"></div>
+                </div>
+                <div class="skill">
+                    <span>PC Hardware</span>
+                    <div class="skill-bar" style="width: 60%;"></div>
+                </div>
+                <div class="skill">
+                    <span>Office Software</span>
+                    <div class="skill-bar" style="width: 70%;"></div>
+                </div>
+                <div class="skill">
+                    <span>Technical Writing</span>
+                    <div class="skill-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="additional-info">
+            <h2>Additional Information</h2>
+            <button class="dropdown-btn" onclick="toggleDropdown('hobbies')">Hobbies <i class="fas fa-chevron-down"></i></button>
+            <div id="hobbies" class="dropdown-content">
+                <ul>
+                    <li>Coding personal projects</li>
+                    <li>Playing video games</li>
+                    <li>Building and repairing PCs</li>
+                    <li>Learning about new technologies</li>
+                </ul>
+            </div>
+            
+            <button class="dropdown-btn" onclick="toggleDropdown('courses')">Relevant Courses <i class="fas fa-chevron-down"></i></button>
+            <div id="courses" class="dropdown-content">
+                <ul>
+                    <li>CSC-130: Introduction to Python</li>
+                    <li>CSC-132: Introduction to C+ & C++</li>
+                    <li>IST-154: Networking Basics</li>
+                    <li>CYB-101: Introduction to Cybersecurity</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Qyntin Dewease. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Qyntin2000" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:qyntin2000@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
