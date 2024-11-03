@@ -1,119 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qyntin Dewease - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="welcome-page">
+    <section class="welcome-section">
         <h1>Welcome to My Portfolio</h1>
         <p>Click to explore</p>
-        <div class="scroll-icon">
-            <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-down scroll-icon bounce"></i>
+    </section>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Qyntin Dewease</h1>
+            <p>IT Student | Problem Solver | Tech Enthusiast | Programmer</p>
         </div>
-    </div>
-    <header class="hero">
-        <h1>Qyntin Dewease</h1>
-        <p>IT Student | Problem Solver | Tech Enthusiast | Programmer</p>
-    </header>
+    </section>
 
-    <main>
-        <section id="about">
+    <section class="about">
+        <div class="container">
             <h2>About Me</h2>
-            <p>As a Cybersecurity and Information Technology major at Hagerstown Community College, I am pursuing my passion for both hardware and software technologies. With plans to transfer to a four-year university in spring 2025, I am committed to advancing my education in this dynamic field. I leverage a combination of classroom knowledge and practical experience to address real-world challenges, continuously seeking opportunities to apply and expand my technical skills.</p>
-        </section>
+            <p>As a Cybersecurity and Information Technology major at Hagerstown Community College, I am pursuing my passion for both hardware and software technologies. With plans to transfer to a four-year university in spring 2025, I am committed to advancing my education in this dynamic field.</p>
+        </div>
+    </section>
 
-        <section id="programming">
+    <section class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <img src="HCC-Logo-Green.png" alt="HCC Logo" class="school-logo">
+                    <h3>Hagerstown Community College</h3>
+                    <p>Cybersecurity and Information Technology</p>
+                    <p>2022 - Present</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
             <h2>Programming Languages</h2>
-            <div class="skills">
-                <div class="skill">
-                    <span>Python</span>
-                    <div class="skill-bar" style="width: 100%;"></div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <p>Advanced proficiency in Python development with focus on automation and bot development</p>
                 </div>
-                <div class="skill">
-                    <span>JavaScript</span>
-                    <div class="skill-bar" style="width: 100%;"></div>
-                </div>
-                <div class="skill">
-                    <span>CSS</span>
-                    <div class="skill-bar" style="width: 100%;"></div>
-                </div>
-                <div class="skill">
-                    <span>HTML</span>
-                    <div class="skill-bar" style="width: 100%;"></div>
-                </div>
-                <div class="skill">
-                    <span>MySQL</span>
-                    <div class="skill-bar" style="width: 100%;"></div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <p>Strong experience in web development and interactive applications</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="experience">
+    <section class="other-skills">
+        <div class="container">
             <h2>Other Skills</h2>
-            <div class="skills">
-                <div class="skill">
-                    <span>Networking</span>
-                    <div class="skill-bar" style="width: 100%;"></div>
-                </div>
-                <div class="skill">
-                    <span>PC Hardware</span>
-                    <div class="skill-bar" style="width: 100%;"></div>
-                </div>
-                <div class="skill">
-                    <span>Office Software</span>
-                    <div class="skill-bar" style="width: 100%;"></div>
-                </div>
-                <div class="skill">
-                    <span>Technical Writing</span>
-                    <div class="skill-bar" style="width: 100%;"></div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Networking</h3>
+                    </div>
+                    <p>Strong understanding of network protocols, security, and infrastructure</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="additional-info">
-            <h2>Additional Information</h2>
-
-            <button class="dropdown-btn" onclick="toggleDropdown('Projects')">Projects <i class="fas fa-chevron-down"></i></button>
-            <div id="Projects" class="dropdown-content">
-                <ul>
-                    <li>Student Information & GPA calcuator</li>
-                </ul>
+    <section class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Discord Community Bot</h3>
+                <p>A feature-rich Discord bot built with Discord.py that enhances server interaction and user engagement features. Key features include user role management and automated responses to keep communities engaged and well-organized.</p>
+                <a href="https://github.com/Qyntin2000/CthulhuBot" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL</span>
+                </div>
             </div>
-
-            <button class="dropdown-btn" onclick="toggleDropdown('courses')">Relevant Courses <i class="fas fa-chevron-down"></i></button>
-            <div id="courses" class="dropdown-content">
-                <ul>
-                    <li>CSC-130: Scripting Fundmtl Using Python</li>
-                    <li>CSC-132: object-oriented programming C & C++ </li>
-                    <li>IST-154: Networking Basics</li>
-                    <li>IST-160: Introduction to Security fundamentals</li>
-                    <li>IST-166: Computer Forensics</li>
-                    <li>IST-108: Microsoft Operating System</li>
-                </ul>
-            </div>
-            
-            <button class="dropdown-btn" onclick="toggleDropdown('hobbies')">Hobbies <i class="fas fa-chevron-down"></i></button>
-            <div id="hobbies" class="dropdown-content">
-                <ul>
-                    <li>Video games</li>
-                    <li>Building and repairing PCs</li>
-                    <li>3D Printing</li>
-                </ul>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Qyntin Dewease. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/qyntin-d-510141288/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Qyntin2000" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:qyntin2000@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/qyntin-d-510141288/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Qyntin2000" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:qyntin2000@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2024 Qyntin Dewease. All rights reserved.</p>
         </div>
     </footer>
 
