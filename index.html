@@ -3,77 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qyntin Dewease - IT Student and Developer Portfolio">
+    <meta name="keywords" content="cybersecurity, IT, portfolio, developer, programming">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Qyntin Dewease - Portfolio">
+    <meta property="og:description" content="IT Student | Problem Solver | Tech Enthusiast | Programmer">
+    <meta property="og:type" content="website">
+    
     <title>Qyntin Dewease - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Library for animations -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="welcome-section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Click to explore</p>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">QD</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <button class="mobile-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section" id="home">
+        <h1 data-aos="fade-up">Welcome to My Portfolio</h1>
+        <p data-aos="fade-up" data-aos-delay="200">Click to explore</p>
         <i class="fas fa-chevron-down scroll-icon bounce"></i>
     </section>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="hero" data-aos="fade-up">
         <div class="container">
             <h1>Qyntin Dewease</h1>
             <p>IT Student | Problem Solver | Tech Enthusiast | Programmer</p>
         </div>
     </section>
 
-    <section class="about">
+    <!-- About Section -->
+    <section class="about" id="about" data-aos="fade-up">
         <div class="container">
             <h2>About Me</h2>
-            <p>As a Cybersecurity and Information Technology major at Hagerstown Community College, I am pursuing my passion for both hardware and software technologies. With plans to transfer to a four-year university in spring 2025, I am committed to advancing my education in this dynamic field.</p>
+            <p>As a dedicated technology enthusiast, I've built a strong foundation in both cybersecurity and information technology. 
+                I recently completed my Associate's degree in Cybersecurity and Information Technology at Hagerstown Community College, 
+                where I developed core competencies in network security, programming, and IT infrastructure. Currently, 
+                I'm advancing my education at Shepherd University, pursuing a Bachelor's degree in Computer Information Technology (CIT). 
+                This academic progression reflects my commitment to staying at the forefront of technology and my 
+                passion for both hardware and software solutions. My diverse technical background, combined with hands-on experience in programming and networking, 
+                has equipped me with a well-rounded skill set in the ever-evolving tech landscape. As I continue my educational journey at Shepherd University, 
+                I'm excited to deepen my expertise and explore new opportunities in the field of information technology.</p>
         </div>
     </section>
 
-    <section class="education">
+    <!-- Education Section -->
+    <section class="education" id="education" data-aos="fade-up">
         <div class="container">
             <h2>Education</h2>
             <div class="education-grid">
-                <div class="education-card">
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
                     <img src="HCC-Logo-Green.png" alt="HCC Logo" class="school-logo">
                     <h3>Hagerstown Community College</h3>
                     <p>Cybersecurity and Information Technology</p>
-                    <p>2022 - Present</p>
+                    <p>2022 - 2024</p>
+                </div>
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="Shepherd.png" alt="Shepherd Logo" class="school-logo">
+                    <h3>Shepherd University</h3>
+                    <p>Computer Information Technology</p>
+                    <p>2025 - Present</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills">
+    <!-- Skills Section -->
+    <section class="skills" id="skills" data-aos="fade-up">
         <div class="container">
             <h2>Programming Languages</h2>
             <div class="skills-grid">
-                <div class="skill-card">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-header">
                         <i class="fab fa-python"></i>
                         <h3>Python</h3>
                     </div>
                     <p>Advanced proficiency in Python development with focus on automation and bot development</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-header">
                         <i class="fab fa-js"></i>
                         <h3>JavaScript</h3>
                     </div>
                     <p>Strong experience in web development and interactive applications</p>
                 </div>
-                    <div class="skill-card">
-                        <div class="skill-header">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-header">
                         <i class="fa-brands fa-html5"></i>
                         <h3>HTML</h3>
                     </div>
                     <p>Strong experience in web development and interactive applications</p>
                 </div>
-        </section>
+            </div>
+        </div>
+    </section>
 
-    <section class="other-skills">
+    <!-- Other Skills Section -->
+    <section class="other-skills" id="other-skills" data-aos="fade-up">
         <div class="container">
             <h2>Other Skills</h2>
             <div class="skills-grid">
-                <div class="skill-card">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-header">
                         <i class="fas fa-network-wired"></i>
                         <h3>Networking</h3>
@@ -84,12 +146,15 @@
         </div>
     </section>
 
-    <section class="projects">
+    <!-- Projects Section -->
+    <section class="projects" id="projects" data-aos="fade-up">
         <div class="container">
             <h2>Projects</h2>
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Discord Community Bot</h3>
-                <p>A feature-rich Discord bot built with Discord.py that enhances server interaction and user engagement features. Key features include user role management and automated responses to keep communities engaged and well-organized.</p>
+                <p>A feature-rich Discord bot built with Discord.py that enhances server interaction 
+                and user engagement features. Key features include user role management and automated 
+                responses to keep communities engaged and well-organized.</p>
                 <a href="https://github.com/Qyntin2000/CthulhuBot" class="github-link" target="_blank">
                     <i class="fab fa-github"></i> View on GitHub
                 </a>
@@ -101,17 +166,36 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/qyntin-d-510141288/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Qyntin2000" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:qyntin2000@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/qyntin-d-510141288/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Qyntin2000" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:qyntin2000@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
             <p>© 2024 Qyntin Dewease. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
