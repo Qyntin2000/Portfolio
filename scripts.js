@@ -5,6 +5,7 @@ AOS.init({
     offset: 100
 });
 
+
 // DOM Elements
 const preloader = document.querySelector('.preloader');
 const navbar = document.querySelector('.navbar');
